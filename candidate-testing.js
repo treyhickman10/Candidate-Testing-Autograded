@@ -31,11 +31,11 @@ function askQuestion() {
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-if (candidateAnswer == correctAnswer)
-  {console.log(candidateName + ", your answer is correct!");}
-
-if (candidateAnswer != correctAnswer)
-  {console.log(candidateName + ", your answer is incorrect!");}
+if (candidateAnswer == correctAnswer) {
+  console.log(candidateName + ", your answer is correct!");
+} else {
+  console.log(candidateName + ", your answer is incorrect!")
+}
 
   let grade;  //TODO 3.2 use this variable to calculate the candidates score.
 
