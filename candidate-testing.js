@@ -9,7 +9,6 @@ let candidateName = "";
 let question = "Who was the first American woman in space? ";
 let correctAnswer = "Sally Ride";
 let candidateAnswer = "";
-let correct = 0;
 
 //TODO: Variables for Part 2
 let questions = [
@@ -37,6 +36,7 @@ function askQuestion() {
 }
 
 function gradeQuiz(candidateAnswers) {
+  let correct = 0;
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   for (i = 0; i < questions.length; i++){
@@ -48,7 +48,7 @@ function gradeQuiz(candidateAnswers) {
       correct += 1;
     }
   }
-  grade = (correct / 5) * 100;
+  grade = (correct / questions.length) * 100;
   console.log(`>>> Overall Grade: ${grade}% (${correct} of ${questions.length} correct) <<<`);
   if(grade >= 80){
     console.log(`>>> Status: Passed <<<`);
